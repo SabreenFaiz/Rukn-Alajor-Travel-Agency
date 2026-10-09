@@ -1,0 +1,257 @@
+/* الإعدادات العامة */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f0f5fa;
+    color: #263238;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* رأس الصفحة */
+header {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 22px 12px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 27px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 16px;
+}
+
+/* قائمة التنقل */
+nav {
+    background-color: #168aad;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #102a43;
+}
+
+/* المحتوى الرئيسي */
+main {
+    width: 92%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+/* الأقسام */
+section {
+    background-color: white;
+    margin-bottom: 22px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #102a43;
+    font-size: 23px;
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #168aad;
+}
+
+section h3 {
+    color: #168aad;
+    font-size: 19px;
+}
+
+/* الصور */
+section img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 18px auto;
+    border-radius: 10px;
+}
+
+/* الروابط */
+a {
+    color: #087ea4;
+}
+
+nav a {
+    color: white;
+}
+
+section a {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+/* الجداول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccd6df;
+    padding: 10px;
+    text-align: right;
+    overflow-wrap: break-word;
+}
+
+th {
+    background-color: #102a43;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #edf5fa;
+}
+
+/* القوائم */
+ul {
+    padding-right: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* النماذج */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #102a43;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8c7d1;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #168aad;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* الأزرار */
+button {
+    background-color: #168aad;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #102a43;
+}
+
+/* أسفل الصفحة */
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* تنسيق شاشات الموبايل */
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav {
+        gap: 5px;
+        padding: 8px;
+    }
+
+    nav a {
+        padding: 7px 9px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    section h3 {
+        font-size: 17px;
+    }
+
+    section img {
+        max-width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+}
