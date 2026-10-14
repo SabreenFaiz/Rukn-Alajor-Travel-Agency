@@ -16,7 +16,7 @@ body {
 
 /* رأس الصفحة */
 header {
-    background-color: #102a43;
+    background-color: brown;
     color: white;
     text-align: center;
     padding: 22px 12px;
@@ -34,7 +34,7 @@ header p {
 
 /* قائمة التنقل */
 nav {
-    background-color: #168aad;
+    background-color: brown;
     padding: 12px;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #102a43;
+    background-color: brown;
 }
 
 /* المحتوى الرئيسي */
@@ -72,15 +72,15 @@ section {
 }
 
 section h2 {
-    color: #102a43;
+    color: mintcream;
     font-size: 23px;
     margin-top: 0;
     padding-bottom: 8px;
-    border-bottom: 2px solid #168aad;
+    border-bottom: 2px solid brown;
 }
 
 section h3 {
-    color: #168aad;
+    color: brown;
     font-size: 19px;
 }
 
@@ -96,7 +96,7 @@ section img {
 
 /* الروابط */
 a {
-    color: #087ea4;
+    color: brown;
 }
 
 nav a {
@@ -125,8 +125,8 @@ td {
 }
 
 th {
-    background-color: #102a43;
-    color: white;
+    background-color: mintcream;
+    color: brown;
 }
 
 tr:nth-child(even) {
@@ -168,7 +168,7 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: #168aad;
+    border-color: #740808;
 }
 
 textarea {
@@ -177,8 +177,8 @@ textarea {
 
 /* الأزرار */
 button {
-    background-color: #168aad;
-    color: white;
+    background-color: mintcream;
+    color: brown;
     border: none;
     padding: 12px;
     border-radius: 5px;
@@ -188,12 +188,12 @@ button {
 }
 
 button:hover {
-    background-color: #102a43;
+    background-color: #6a460d;
 }
 
 /* أسفل الصفحة */
 footer {
-    background-color: #102a43;
+    background-color: brown;
     color: white;
     text-align: center;
     padding: 15px;
@@ -253,5 +253,39 @@ footer p {
     th,
     td {
         padding: 7px;
+      /* تصميم عنوان الصفحة */
+.title-box {
+    background: linear-gradient(
+        to right,
+        black,
+        red,
+        green,
+        blue
+    );
+
+    padding: 5px;
+    border-radius: 50% / 35%;
+    text-align: center;
+    margin: 20px auto;
+    width: 95%;
+    max-width: 900px;
+}
+
+/* تنسيق الكتابة داخل العنوان */
+.title-box h1 {
+    background-color: pink;
+    color: darkred;
+    text-decoration: underline;
+    font-size: 30px;
+    margin: 0;
+    padding: 15px 8px;
+    border-radius: 50% / 35%;
+  @media screen and (max-width: 600px) {
+    .title-box h1 {
+        font-size: 20px;
+        padding: 12px 5px;
     }
 }
+}
+    }
+    }
