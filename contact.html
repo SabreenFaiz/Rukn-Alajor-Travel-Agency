@@ -1,10 +1,11 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>تواصل معنا - وكالة ركن الأجور</title>
-
-<link rel="stylesheet" href="CSS/style.css">
-
-</head><body><header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - وكالة ركن الأجور</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body><header>
     <h1>وكالة ركن الأجور للسفر والسياحة</h1>
     <p>رحلتك تبدأ معنا ✈️</p>
 </header><nav>
@@ -12,12 +13,11 @@
     <a href="services.html">خدماتنا</a>
     <a href="login.html">تسجيل الدخول</a>
     <a href="contact.html">تواصل معنا</a>
-</nav><main><section>
-    <h2>تواصل معنا 📩</h2>
-
-    <p>
+</nav><main>
+    <section>
+        <h2>تواصل معنا 📩</h2>    <p>
         يسعدنا تواصلكم معنا.
-        املؤوا النموذج التالي وسنتلقى بيانات رسالتكم.
+        يرجى تعبئة النموذج التالي لإرسال رسالتكم.
     </p>
 
     <form id="contactForm">
@@ -26,7 +26,7 @@
         <input
             type="text"
             id="name"
-            placeholder="أدخلي اسمك الكامل"
+            placeholder="أدخل الاسم الكامل"
             required
         >
 
@@ -46,7 +46,7 @@
         <input
             type="text"
             id="subject"
-            placeholder="اكتبي موضوع الرسالة"
+            placeholder="اكتب موضوع الرسالة"
             required
         >
 
@@ -56,20 +56,18 @@
         <textarea
             id="message"
             rows="5"
-            placeholder="اكتبي رسالتك هنا"
+            placeholder="اكتب الرسالة هنا"
             required
         ></textarea>
 
         <br><br>
 
         <button type="submit">إرسال الرسالة 📩</button>
-
         <button type="reset">مسح الحقول</button>
 
     </form>
 
     <p id="result"></p>
-
 </section>
 
 <section>
@@ -84,7 +82,6 @@
     <p>وكالة ركن الأجور للسفر والسياحة</p>
     <p>جميع الحقوق محفوظة &copy; 2026</p>
 </footer><script>
-
 document.getElementById("contactForm").addEventListener("submit", function(event) {
 
     event.preventDefault();
@@ -95,22 +92,18 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     let message = document.getElementById("message").value.trim();
 
     if (name === "" || email === "" || subject === "" || message === "") {
-
-        alert("من فضلك املئي جميع الحقول ❤️");
+        alert("يرجى تعبئة جميع الحقول ❤️");
         return;
-
     }
 
     document.getElementById("result").textContent =
-        "شكراً لكِ يا " + name +
-        " ❤️ تم التحقق من بيانات رسالتك بنجاح!";
+        "شكراً لك " + name +
+        " ❤️ تم التحقق من بيانات الرسالة بنجاح!";
 
-    alert("شكراً لتواصلك مع وكالة ركن الأجور! ❤️");
+    alert("شكراً لتواصلكم مع وكالة ركن الأجور! ❤️");
 
     document.getElementById("contactForm").reset();
 
 });
-
-</script>
-</body>
-        </html>
+</script></body>
+    </html>
