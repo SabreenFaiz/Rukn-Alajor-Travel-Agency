@@ -1,9 +1,17 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>وكالة ركن الأجور للسفر والسياحة</title>
-<link rel="stylesheet" href="CSS/style.css">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-</head><body><header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وكالة ركن الأجور للسفر والسياحة</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+<header>
     <h1>وكالة ركن الأجور للسفر والسياحة</h1>
     <p>رحلتك تبدأ معنا</p>
 </header>
@@ -21,6 +29,27 @@
         <h2>مرحباً بكم في وكالة ركن الأجور</h2>
 
         <img src="img/rukn.jpg" alt="وكالة ركن الأجور للسفر والسياحة">
+
+        <!-- أزرار JavaScript -->
+        <div class="home-buttons">
+
+            <button type="button" onclick="showMessage()">
+                رسالة ترحيب ❤️
+            </button>
+
+            <button type="button" onclick="showServices()">
+                خدماتنا ✈️
+            </button>
+
+            <button type="button" onclick="changeBackground()">
+                تغيير لون الخلفية 🎨
+            </button>
+
+            <button type="button" onclick="showDate()">
+                تاريخ اليوم 📅
+            </button>
+
+        </div>
 
         <p>
             نقدم لكم خدمات السفر والسياحة والعمرة والحج،
@@ -81,4 +110,25 @@
     <p>جميع الحقوق محفوظة &copy; 2026</p>
 </footer>
 
-</body></html>
+<!-- ربط ملف JavaScript -->
+<script>
+function showMessage() {
+    alert("مرحباً بكم في وكالة ركن الأجور للسفر والسياحة! ❤️");
+}
+
+function showServices() {
+    alert("خدماتنا:\nالحج والعمرة\nالسفر الجوي\nالسفر البري\nالإقامات والزيارات\nالموافقات الأمنية");
+}
+
+function changeBackground() {
+    document.body.style.backgroundColor = "lightpink";
+}
+
+function showDate() {
+    alert("تاريخ اليوم: " + new Date().toLocaleDateString());
+}
+</script>
+<script src="JS/script.js"></script>
+</body>
+</html>
+
